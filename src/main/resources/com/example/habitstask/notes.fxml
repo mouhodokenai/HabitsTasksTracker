@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane fx:id="NotesRoot" dividerPositions="0.15551974214343273" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="498.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.habitstask.NotesController">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="885.0">
+        <Button layoutX="630.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeLanguage" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/translate.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="Back" layoutX="800.0" layoutY="10.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/home.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label layoutX="34.0" layoutY="4.0" text="%notesLabel" textFill="#f22e48">
+            <font>
+                <Font name="Segoe Print" size="40.0" />
+            </font>
+        </Label>
+      <Button fx:id="Add" layoutX="715.0" layoutY="10.0" mnemonicParsing="false" onAction="#Add" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE">
+         <graphic>
+             <ImageView fitHeight="44.0" fitWidth="43.0">
+                 <Image url="@photos/cross%20(2).png" />
+             </ImageView>
+         </graphic>
+      </Button>
+    </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="416.8" prefWidth="885.0">
+        <ImageView layoutX="-243.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@photos/%2394ffed%23adffaf%23e9ff7a_1920_1080.png" />
+        </ImageView>
+        <ListView fx:id="NotesListview" layoutX="29.0" prefHeight="418.0" prefWidth="856.0" />
+        <stylesheets>
+            <URL value="@styles.css" />
+        </stylesheets>
+    </AnchorPane>
+</SplitPane>

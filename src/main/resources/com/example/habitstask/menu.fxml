@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane fx:id="MenuRoot" dividerPositions="0.15551974214343273" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="498.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.habitstask.MenuController">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="885.0">
+        <Button onAction="#Stats" fx:id="Statistics" layoutX="715.0" layoutY="10.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/bar-chart.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="630.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeLanguage" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/translate.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="Back" layoutX="800.0" layoutY="10.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/back-arrow.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label fx:id="title" layoutX="34.0" layoutY="4.0" text="%menuTitle" textFill="#f22e48">
+            <font>
+                <Font name="Segoe Print" size="40.0" />
+            </font>
+        </Label>
+    </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="416.8" prefWidth="885.0">
+        <ImageView layoutX="-243.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@photos/%2394ffed%23adffaf%23e9ff7a_1920_1080.png" />
+        </ImageView>
+        <Button fx:id="tasks" layoutX="80.0" layoutY="30.0" mnemonicParsing="false" onAction="#Tasks" styleClass="transparent-button" stylesheets="@styles.css" text="%menuTasks" textFill="#3b2679">
+            <graphic>
+                <ImageView fitHeight="160.0" fitWidth="160.0">
+                    <Image url="@photos/agenda.png" />
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="Segoe Print Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="habits" layoutX="510.0" layoutY="30.0" mnemonicParsing="false" onAction="#Habits" styleClass="transparent-button" stylesheets="@styles.css" text="%menuHabits" textFill="#3b2679">
+            <graphic>
+                <ImageView fitHeight="160.0" fitWidth="160.0">
+                    <Image url="@photos/happy-face.png" />
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="Segoe Print Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="achievements" layoutX="510.0" layoutY="230.0" mnemonicParsing="false" onAction="#Achievements" styleClass="transparent-button" stylesheets="@styles.css" text="%menuAchievements" textFill="#3b2679">
+            <graphic>
+                <ImageView fitHeight="160.0" fitWidth="160.0">
+                    <Image url="@photos/circle-target.png" />
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="Segoe Print Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="notes" layoutX="80.0" layoutY="230.0" mnemonicParsing="false" onAction="#Notes" styleClass="transparent-button" stylesheets="@styles.css" text="%menuNotes" textFill="#3b2679">
+            <graphic>
+                <ImageView fitHeight="160.0" fitWidth="160.0">
+                    <Image url="@photos/edit.png" />
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="Segoe Print Bold" size="24.0" />
+            </font>
+        </Button>
+    </AnchorPane>
+</SplitPane>

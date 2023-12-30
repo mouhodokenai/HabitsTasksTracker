@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane fx:id="StatsRoot" dividerPositions="0.15551974214343273" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="498.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.habitstask.StatsController">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="885.0">
+        <Button layoutX="715.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeLanguage" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/translate.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="Back" layoutX="800.0" layoutY="10.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/back-arrow.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label fx:id="title" layoutX="34.0" layoutY="4.0" text="%statsTitle" textFill="#f22e48">
+            <font>
+                <Font name="Segoe Print" size="40.0" />
+            </font>
+        </Label>
+    </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="416.8" prefWidth="885.0">
+        <ImageView layoutX="-243.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@photos/%2394ffed%23adffaf%23e9ff7a_1920_1080.png" />
+        </ImageView>
+        <Label fx:id="tasks" layoutX="80.0" layoutY="30.0" styleClass="transparent-button" stylesheets="@styles.css" text="%menuTasks" textFill="#3b2679">
+            <font>
+                <Font name="Segoe Print Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="habits" layoutX="510.0" layoutY="30.0" styleClass="transparent-button" stylesheets="@styles.css" text="%menuHabits" textFill="#3b2679">
+            <font>
+                <Font name="Segoe Print Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="achievements" layoutX="510.0" layoutY="220.0" styleClass="transparent-button" stylesheets="@styles.css" text="%menuAchievements" textFill="#3b2679">
+            <font>
+                <Font name="Segoe Print Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="notes" layoutX="80.0" layoutY="220.0" styleClass="transparent-button" stylesheets="@styles.css" text="%menuNotes" textFill="#3b2679">
+            <font>
+                <Font name="Segoe Print Bold" size="24.0" />
+            </font>
+        </Label>
+      <Label fx:id="taskAllLabel" layoutX="80.0" layoutY="68.0" prefHeight="18.0" prefWidth="150.0" text="%taskAllLabel">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </Label>
+        <Label fx:id="taskInTimeLabel" layoutX="80.0" layoutY="93.0" prefHeight="18.0" text="%taskInTimeLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="taskDoneLabel" layoutX="80.0" layoutY="118.0" prefHeight="18.0" text="%taskDoneLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="notesAllLabel" layoutX="80.0" layoutY="258.0" prefHeight="18.0" prefWidth="150.0" text="%notesAllLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="habitsAllLabel" layoutX="510.0" layoutY="68.0" prefHeight="18.0" prefWidth="150.0" text="%habitsAllLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="habitsDayLabel" layoutX="510.0" layoutY="93.0" prefHeight="18.0" text="%habitsDayLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="habitsWeekLabel" layoutX="510.0" layoutY="118.0" prefHeight="18.0" text="%habitsWeekLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="habitsMonthLabel" layoutX="510.0" layoutY="143.0" prefHeight="18.0" text="%habitsMonthLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="habitsBadLabel" layoutX="510.0" layoutY="168.0" prefHeight="18.0" text="%habitsBadLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="achAllLabel" layoutX="510.0" layoutY="258.0" prefHeight="18.0" prefWidth="150.0" text="%achAllLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="achNowYearLabel" layoutX="510.0" layoutY="283.0" prefHeight="18.0" prefWidth="150.0" text="%achNowYearLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="achNextYearLabel" layoutX="510.0" layoutY="308.0" prefHeight="18.0" prefWidth="150.0" text="%achNextYearLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="achDoneLabel" layoutX="510.0" layoutY="333.0" prefHeight="18.0" prefWidth="150.0" text="%achDoneLabel">
+            <font>
+                <Font name="Gabriola" size="24.0" />
+            </font>
+        </Label>
+    </AnchorPane>
+</SplitPane>

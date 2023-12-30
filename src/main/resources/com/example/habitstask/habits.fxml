@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane fx:id="HabitsRoot" dividerPositions="0.15551974214343273" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="498.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.habitstask.HabitsController">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="885.0">
+        <Button fx:id="Back" layoutX="800.0" layoutY="10.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/home.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="Add" layoutX="715.0" layoutY="10.0" mnemonicParsing="false" onAction="#Add" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/cross%20(2).png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label layoutX="34.0" layoutY="4.0" text="%habitsLabel" textFill="#f22e48">
+            <font>
+                <Font name="Segoe Print" size="40.0" />
+            </font>
+        </Label>
+        <Button layoutX="630.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeLanguage" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/translate.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </AnchorPane>
+    <TabPane prefHeight="417.0" prefWidth="885.0" tabClosingPolicy="UNAVAILABLE">
+        <Tab fx:id="days" text="%habitsDays">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <ImageView layoutX="-243.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@photos/%2394ffed%23adffaf%23e9ff7a_1920_1080.png" />
+                </ImageView>
+                <TableView fx:id="daysTableView" layoutX="-2.0" layoutY="75.0" prefHeight="200.0" prefWidth="514.0" style="-fx-table-header-border-color: transparent;" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="buttonColumn" prefWidth="76.19997864961624" />
+                        <TableColumn fx:id="titleColumn" prefWidth="730.7999725341797" />
+                        <TableColumn fx:id="doneColumn" prefWidth="75.99995117187495" />
+                    </columns>
+                </TableView>
+            </AnchorPane>
+        </Tab>
+        <Tab fx:id="weeks" text="%habitsWeeks">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <ImageView layoutX="-243.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@photos/%2394ffed%23adffaf%23e9ff7a_1920_1080.png" />
+                </ImageView>
+                <TableView fx:id="weeksTableView" layoutX="-2.0" layoutY="75.0" prefHeight="200.0" prefWidth="514.0" style="-fx-table-header-border-color: transparent;" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="buttonColumn2" prefWidth="76.19997864961624" />
+                        <TableColumn fx:id="titleColumn2" prefWidth="730.7999725341797" />
+                        <TableColumn fx:id="doneColumn2" prefWidth="75.99995117187495" />
+                    </columns>
+                </TableView>
+            </AnchorPane>
+        </Tab>
+
+        <Tab fx:id="months" text="%habitsMonths">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <ImageView layoutX="-243.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@photos/%2394ffed%23adffaf%23e9ff7a_1920_1080.png" />
+                </ImageView>
+                <TableView fx:id="monthsTableView" layoutX="-2.0" layoutY="75.0" prefHeight="200.0" prefWidth="514.0" style="-fx-table-header-border-color: transparent;" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="buttonColumn3" prefWidth="76.19997864961624" />
+                        <TableColumn fx:id="titleColumn3" prefWidth="730.7999725341797" />
+                        <TableColumn fx:id="doneColumn3" prefWidth="75.99995117187495" />
+                    </columns>
+                </TableView>
+            </AnchorPane>
+        </Tab>
+        <Tab fx:id="bad" text="%habitsBad">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <ImageView layoutX="-243.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@photos/%2394ffed%23adffaf%23e9ff7a_1920_1080.png" />
+                </ImageView>
+                <TableView fx:id="badTableView" layoutX="75.0" layoutY="75.0" prefHeight="388.0" prefWidth="810.0" style="-fx-table-header-border-color: transparent;" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="titleColumn4" prefWidth="408.59998321533203" />
+                        <TableColumn fx:id="dateColumn4" prefWidth="474.6000671386719" sortable="false" text="Дней с момента отказа:" />
+                    </columns>
+                </TableView>
+            </AnchorPane>
+        </Tab>
+    </TabPane>
+</SplitPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.net.URL?>
+<SplitPane fx:id="TasksRoot" dividerPositions="0.15551974214343273" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="498.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.habitstask.TasksController">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="885.0">
+        <Button fx:id="Back" layoutX="800.0" layoutY="10.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos\home.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="Add" layoutX="715.0" layoutY="10.0" mnemonicParsing="false" onAction="#Add" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/cross%20(2).png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="630.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeLanguage" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/translate.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label layoutX="34.0" layoutY="4.0" text="%tasksLabel" textFill="#f22e48">
+            <font>
+                <Font name="Segoe Print" size="40.0" />
+            </font>
+        </Label>
+    </AnchorPane>
+    <TabPane prefHeight="417.0" prefWidth="885.0" tabClosingPolicy="UNAVAILABLE">
+        <Tab fx:id="now" text="%tasksNow">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="416.8" prefWidth="885.0">
+                <ImageView layoutX="-243.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@photos\%2394ffed%23adffaf%23e9ff7a_1920_1080.png" />
+                </ImageView>
+                <TableView fx:id="tasksTableView" layoutX="-2.0" layoutY="75.0" prefHeight="200.0" prefWidth="514.0" style="-fx-table-header-border-color: transparent;" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="buttonColumn" prefWidth="76.19997864961624" />
+                        <TableColumn fx:id="titleColumn" prefWidth="475.2000503540039" />
+                        <TableColumn fx:id="dateColumn" prefWidth="261.20001220703125" />
+                        <TableColumn fx:id="warningColumn" prefWidth="110.79998779296875" />
+                    </columns>
+                </TableView>
+            </AnchorPane>
+        </Tab>
+        <Tab fx:id="done" text="%tasksDone">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="416.8" prefWidth="885.0">
+                <ImageView layoutX="-243.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@photos\%2394ffed%23adffaf%23e9ff7a_1920_1080.png" />
+                </ImageView>
+                <ListView fx:id="tasksListview" layoutX="29.0" prefHeight="418.0" prefWidth="856.0" />
+                <stylesheets>
+                    <URL value="@styles.css" />
+                </stylesheets>
+            </AnchorPane>
+        </Tab>
+    </TabPane>
+</SplitPane>

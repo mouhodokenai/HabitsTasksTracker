@@ -1,0 +1,83 @@
+/* styles.css */
+
+.transparent-button {
+    -fx-background-color: transparent;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+   /* -fx-text-fill: #f22e48; */
+}
+.list-view {
+    -fx-background-color: transparent;
+    -fx-font-family: "Gabriola";
+    -fx-text-fill: #3b2679;
+    -fx-font-size: 32px;
+
+}
+
+/ * Изменить цвет фона области панели TabPane * /
+.tab-pane {
+    -fx-background-color: #e6e6e6;
+}
+/ * Изменить цвет фона Tab * /
+.tab {
+    -fx-background-color: #333333;
+}
+/ * Изменить цвет фона верхней панели * /
+.tab-pane>*.tab-header-area>*.tab-header-background
+{
+    -fx-background-color: -fx-outer-border, -fx-text-box-border, #333333;
+}
+/ * Изменить цвет текста во вкладке * /
+.tab-label {
+    -fx-text-fill: #e6e6e6;
+}
+/ * Дочерний селектор, выберите вкладку дочернего элемента, когда выбрана вкладка * /
+.tab:selected .tab-label {
+    -fx-text-fill: #003333ff;
+}
+/ * Установить цвет фона при выборе вкладки * /
+.tab:selected {
+    -fx-background-color: #990000ff;
+}
+/ * Когда выбрана вкладка, выберите ее границу и измените стиль * /
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-radius: 0px;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-color: #4d1a4dff;
+}
+
+.text-area {
+    -fx-control-inner-background: rgba(255, 255, 255, 0.5); /* Здесь 0.5 означает 50% прозрачность. Вы можете изменить это значение в диапазоне от 0.0 (полностью прозрачный) до 1.0 (полностью непрозрачный). */
+}
+
+.table-view {
+	-fx-background-color: transparent;
+	-fx-font-family: "Gabriola";
+	-fx-text-fill: #3b2679;
+    -fx-font-size: 32px;
+
+}
+.table-column {
+	-fx-background-color: transparent;
+}
+.table-row-cell {
+    -fx-text-fill: #f22e48;
+    -fx-background-color:transparent;
+
+}
+.table-view .column-header-background {
+	-fx-background-color:transparent;
+}
+.table-view .filler {
+	-fx-background-color:transparent;
+}
+
+.round-button {
+    -fx-background-color: #3b2679;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-border-radius: 100%; /* Устанавливаем скругление для создания круглой формы */
+    -fx-padding: 5px 10px;
+}

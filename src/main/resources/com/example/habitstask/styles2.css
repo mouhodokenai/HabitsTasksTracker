@@ -1,0 +1,10 @@
+.custom-button {
+    -fx-background-color: #4CAF50; /* Цвет фона */
+    -fx-text-fill: white; /* Цвет текста */
+    -fx-font-size: 14px; /* Размер шрифта */
+    -fx-padding: 5px 10px; /* Отступы */
+}
+
+.custom-button:hover {
+    -fx-background-color: #45a049; /* Цвет фона при наведении */
+}

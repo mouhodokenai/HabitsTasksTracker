@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane fx:id="NoteRoot" dividerPositions="0.15551974214343273" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="498.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.habitstask.NoteController">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="885.0">
+        <Button fx:id="Back" layoutX="715.0" layoutY="10.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/back-arrow.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label fx:id="noteLabel" layoutX="34.0" layoutY="4.0" text="%noteLabel" textFill="#f22e48">
+            <font>
+                <Font name="Segoe Print" size="40.0" />
+            </font>
+        </Label>
+        <Button layoutX="630.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeLanguage" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/translate.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="800.0" layoutY="10.0" mnemonicParsing="false" onAction="#Menu" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/home.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="416.8" prefWidth="885.0">
+        <ImageView layoutX="-243.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@photos/%2394ffed%23adffaf%23e9ff7a_1920_1080.png" />
+        </ImageView>
+      <TextField fx:id="titleField" alignment="CENTER" layoutX="189.0" layoutY="40.0" prefHeight="26.0" prefWidth="473.0" promptText="%noteTitleField" AnchorPane.leftAnchor="205.59" AnchorPane.rightAnchor="205.6099999999999" />
+      <TextArea fx:id="textField" layoutX="12.0" layoutY="94.0" prefHeight="198.0" prefWidth="861.0" style="@styles.css" styleClass="text-area" stylesheets="@styles.css" AnchorPane.bottomAnchor="125.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="94.0" />
+        <Button fx:id="Del" layoutX="315.0" layoutY="319.0" mnemonicParsing="false" onAction="#DeleteNote" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE" AnchorPane.bottomAnchor="37.80000000000001" AnchorPane.leftAnchor="315.0">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/waste-bin.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="Add" layoutX="510.0" layoutY="319.0" mnemonicParsing="false" onAction="#AddNote" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" textFill="WHITE" AnchorPane.bottomAnchor="37.80000000000001" AnchorPane.rightAnchor="314.79999999999995">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="43.0">
+                    <Image url="@photos/check-mark.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <stylesheets>
+            <URL value="@styles.css" />
+        </stylesheets>
+    </AnchorPane>
+</SplitPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="WelcomeRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.habitstask.WelcomeController">
+   <ImageView fitHeight="500.0" fitWidth="885.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@photos/%2394ffed%23adffaf%23e9ff7a_1920_1080.png" />
+   </ImageView>
+   <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="730.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="25.0">
+      <Image url="@photos/free-icon-productivity-2952984.png" />
+   </ImageView>
+   <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="730.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="27.0">
+      <Image url="@photos/checklist.png" />
+   </ImageView>
+   <Label layoutX="77.0" layoutY="27.0" text="%welLabel" textFill="#f22e48" AnchorPane.leftAnchor="65.8" AnchorPane.rightAnchor="220.80000000000007" AnchorPane.topAnchor="27.0">
+      <font>
+         <Font name="Segoe Print" size="57.0" />
+      </font>
+   </Label>
+   <Button layoutX="208.0" layoutY="219.0" mnemonicParsing="false" onAction="#Authorization" prefHeight="59.0" prefWidth="314.0" style="-fx-background-color: #ebf7ff; -fx-background-radius: 30;" text="%welLogin" textFill="#f22e48" AnchorPane.leftAnchor="207.8" AnchorPane.rightAnchor="362.6" AnchorPane.topAnchor="210.0">
+      <font>
+         <Font name="Segoe Print Bold" size="24.0" />
+      </font>
+      <effect>
+         <DropShadow blurType="ONE_PASS_BOX" height="70.0" radius="34.5" spread="0.6" width="70.0">
+            <color>
+               <Color red="0.23137255012989044" green="0.14901961386203766" blue="0.4745098054409027" />
+            </color></DropShadow>
+      </effect>
+   </Button>
+   <Button layoutX="208.0" layoutY="331.0" mnemonicParsing="false" onAction="#Registration" prefHeight="59.0" prefWidth="314.0" style="-fx-background-color: #ebf7ff; -fx-background-radius: 30;" text="%welReg" textFill="#f22e48" AnchorPane.bottomAnchor="107.0">
+      <font>
+         <Font name="Segoe Print Bold" size="24.0" />
+      </font>
+      <effect>
+         <DropShadow blurType="ONE_PASS_BOX" height="70.0" radius="34.5" spread="0.6" width="70.0">
+            <color>
+               <Color red="0.23137255012989044" green="0.14901961386203766" blue="0.4745098054409027" />
+            </color>
+         </DropShadow>
+      </effect>
+   </Button>
+   <Button layoutX="677.0" layoutY="219.0" mnemonicParsing="false" onAction="#changeLanguage" prefHeight="60.0" style="-fx-background-radius: 90; -fx-background-color: #3b2679;" text="%lanChange" textFill="WHITE">
+      <graphic>
+         <ImageView fitHeight="44.0" fitWidth="43.0">
+            <Image url="@photos/translate.png" />
+         </ImageView>
+      </graphic>
+      <font>
+         <Font name="Gabriola" size="24.0" />
+      </font>
+   </Button>
+</AnchorPane>
