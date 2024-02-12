@@ -68,15 +68,15 @@
 
 Документация разработки:
 
-[Техническое задание](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/1.-ТЗ-для-приложения)https://github.com/mouhodokenai/HabitsTasksTracker/wiki/1.-ТЗ-для-приложения
+[Техническое задание](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/1.-ТЗ-для-приложения)
 
 [Требования](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/3.-Требования)
 
-[Спецификация](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/2.-Спецификация)https://github.com/mouhodokenai/HabitsTasksTracker/wiki/2.-Спецификация
+[Спецификация](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/2.-Спецификация)
 
-[Прецеденты](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/4.-Таблицы-прецедентов)https://github.com/mouhodokenai/HabitsTasksTracker/wiki/4.-Таблицы-прецедентов
+[Прецеденты](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/4.-Таблицы-прецедентов)
 
-[Тестирование](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/5.-Тестирование)https://github.com/mouhodokenai/HabitsTasksTracker/wiki/5.-Тестирование
+[Тестирование](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/5.-Тестирование)
 
 
 
