@@ -64,15 +64,19 @@
 ## Документация
 Пользовательская документация:
 
-Руководство пользователя 
+[Руководство пользователя](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/6.-Руководство-пользователя)
+
 Документация разработки:
 
-Техническое задание
-Требования
-Спецификация
-Прецеденты
-Диаграммы
-Тестирование
+[Техническое задание](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/1.-ТЗ-для-приложения)https://github.com/mouhodokenai/HabitsTasksTracker/wiki/1.-ТЗ-для-приложения
+
+[Требования](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/3.-Требования)
+
+[Спецификация](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/2.-Спецификация)https://github.com/mouhodokenai/HabitsTasksTracker/wiki/2.-Спецификация
+
+[Прецеденты](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/4.-Таблицы-прецедентов)https://github.com/mouhodokenai/HabitsTasksTracker/wiki/4.-Таблицы-прецедентов
+
+[Тестирование](https://github.com/mouhodokenai/HabitsTasksTracker/wiki/5.-Тестирование)https://github.com/mouhodokenai/HabitsTasksTracker/wiki/5.-Тестирование
 
 
 
